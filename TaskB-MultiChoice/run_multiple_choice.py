@@ -29,18 +29,18 @@ from torch.utils.data import DataLoader, RandomSampler, SequentialSampler, Tenso
 from torch.utils.data.distributed import DistributedSampler
 from tqdm.auto import tqdm, trange
 
+# RobertaConfig,
+#     RobertaForMultipleChoice,
+#     RobertaTokenizer,
+#     XLNetConfig,
+#     XLNetForMultipleChoice,
+#     XLNetTokenizer,
 from transformers import (
     WEIGHTS_NAME,
     AdamW,
     BertConfig,
     BertForMultipleChoice,
     BertTokenizer,
-    RobertaConfig,
-    RobertaForMultipleChoice,
-    RobertaTokenizer,
-    XLNetConfig,
-    XLNetForMultipleChoice,
-    XLNetTokenizer,
     get_linear_schedule_with_warmup,
 )
 from utils_multiple_choice import convert_examples_to_features, processors
